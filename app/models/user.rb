@@ -45,5 +45,5 @@ class User < ApplicationRecord
   has_many :feed, through: :leaders, source: :own_photos
   has_many :discover, through: :leaders, source: :liked_photos
 
-  validates :username, presence: true, uniqueness: true
+  validates :email, presence: true, uniqueness: true
 end
