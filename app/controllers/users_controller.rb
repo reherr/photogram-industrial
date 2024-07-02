@@ -12,9 +12,11 @@ class UsersController < ApplicationController
   end
 
   def followers
+    @user = current_user
   end
 
   def following
+    @user = current_user
   end
-  
+
 end
