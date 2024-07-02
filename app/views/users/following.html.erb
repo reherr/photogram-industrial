@@ -26,7 +26,7 @@
 
 
 <div class="list-group">
-  <% @user.accepted_sent_follow_requests.each do |following| %>
-<%= link_to "#{following.username}", user_path(following.username), class: "list-group-item" %>
+  <% @user.leaders.each do |leader| %>
+<%= link_to "#{leader.username}", user_path(leader.username), class: "list-group-item" %>
   <% end %>
 </div>
